@@ -1,0 +1,196 @@
+/*=================================================
+||				1. Imports 
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:200,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body
+{
+	font-family: 'Roboto', 'Open-Sans', sans-serif;
+	overflow-x: hidden;
+	color: #313131;
+}
+.black{
+	color: #313131;
+}
+.white{
+	background: #fff ;
+}
+.purple{
+	background: #4a148c;
+}
+.section-wrapper{
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.section-title{
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.section-item-title{
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.section-item-detail{
+	font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #999;
+    letter-spacing: .39px;
+}
+.underline{
+	height: 2px;
+	width: 50px;
+	margin: 0px auto 60px;
+}
+/*=================================================
+||				3. Header
+==================================================*/
+.header
+{
+	background: 
+	url('../images/background_first.png'),
+	url('../images/ezgif 7.png') ;
+	background-repeat: no-repeat;
+	background-position: 
+	top 10px left 10px,
+    top 10px right 10px;
+    /* bottom 10px right 10px,
+    bottom 10px left 10px; */
+  
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	color: #fff;
+	
+
+}
+			/*navbar*/
+.navbar-default .navbar-brand{
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 20px;
+	height: auto;
+	font-weight: 500;
+	letter-spacing: 5px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-fixed-top .navbar-toggle .icon-bar {
+    background-color: #313131;
+}
+.navbar-fixed-top .navbar-toggle{
+	border-color: #313131;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    padding-top: 50px;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+    /*text-transform: uppercase;*/
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.navbar-default .navbar-toggle{
+	border-radius: 0px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #fff;
+}
+.navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+}
+	/*Home*/
+	.header-wrapper{
+		text-align: left;
+		display: table-cell;
+		vertical-align: middle;
+		position: absolute;
+	}
+	.header-table{
+		display: flex;
+		align-items: center;
+		height: 586px;
+		width: 2866px;
+	}
+	.header-title{
+		font-family: 'Inter';
+		font-style: normal;
+		font-size: 50px;
+		line-height:  50px;
+		font-weight: 900;
+	}
+	.header-subtitle{
+		font-size: 20px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 300;
+		letter-spacing: 3px;
+		display: flex;
+		align-items: center;
+
+	}
+
+	.app-icons {
+		display: flex;
+		align-items: center;
+	  }
+
+	  
+	.android {
+		width: 164px;
+	}
+	.apple {
+		width: 130px;
+	}
+	
+	/** Astronuts page 1 **/
+	.astronut-1 {
+	align-items: right;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: url('../images/astronut-1.png');
+	}
+
+	/** Iphone one **/
+	.iphone-1 {
+		position: absolute;
+		top:0;
+		right: 0;
+		display: block;
+		height: 125px;
+		width: 125px;
+		background: url('../images/iphone-1.png');
+
+
+	}
