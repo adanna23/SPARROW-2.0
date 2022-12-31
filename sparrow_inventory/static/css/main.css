@@ -54,15 +54,10 @@ body
 .header
 {
 	background: 
-	url('../images/background_first.png'),
-	url('../images/ezgif 7.png') ;
+	url('../images/background_first.png');
+	/* url('../images/ezgif 7.png') ; */
 	background-repeat: no-repeat;
-	background-position: 
-	top 10px left 10px,
-    top 10px right 10px;
-    /* bottom 10px right 10px,
-    bottom 10px left 10px; */
-  
+	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -194,3 +189,160 @@ body
 
 
 	}
+
+	/*=================================================
+||				2. About
+     ==================================================*/
+	 .about
+	 {
+		 background: url('../images/map-background.png');
+		 background-repeat: no-repeat;
+		 background-position: center center;
+		 background-size: cover;
+		 background-attachment: fixed;
+		 height: 100vh;
+		 color: rgb(9, 9, 9);
+		 text-transform: uppercase;
+	 
+	 }
+			 /*Home*/
+	 .about-wrapper{
+		 text-align: center;
+		 display: table-cell;
+		 vertical-align: middle;
+		 position: relative;
+	 }
+	 .about-table{
+		 display: table;
+		 height: 70vh;
+		 width: 100%;
+	 }
+	 .about-title{
+		 font-size: 50px;
+		 letter-spacing: 10px;
+		 font-weight: 500;
+		font-family: 'Inter';
+		font-style: bold;
+	 }
+
+	 /*=================================================
+||				3. Join Us
+     ==================================================*/
+	 .joinus
+	 {
+		 /* background: url('../images/map-background.png'); */
+		 background-repeat: no-repeat;
+		 background-position: center center;
+		 background-size: cover;
+		 background-attachment: fixed;
+		 height: 100vh;
+		 color: rgb(0, 0, 0);
+		 text-transform: lowercase;
+	 
+	 }
+			 /*Home*/
+	 .joinus-wrapper{
+		 text-align: left;
+		 display: table-cell;
+		 vertical-align: middle;
+		 position: relative;
+	 }
+	 .joinus-table{
+		 display: table;
+		 height: 70vh;
+		 width: 100%;
+	 }
+	 .joinus-title{
+		 font-size: 50px;
+		 letter-spacing: 10px;
+		 font-weight: 500;
+		font-family: 'Inter';
+		font-style: bold;
+	 }
+
+	 .joinus-subtitle{
+		font-size: 20px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 300;
+		letter-spacing: 3px;
+		display: flex;
+		align-items: center;
+
+	}
+
+	.joinus-subtitle-2{
+		font-size: 20px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 300;
+		letter-spacing: 3px;
+		display: flex;
+		align-items: center;
+
+	}
+
+	/*** button **/
+	/* Container needed to position the button. Adjust the width as needed */
+	.img-button {
+		display: block;
+		background-image: url('../images/button.png');
+  		width: 150px;
+  		height: 30px;
+  		padding: 5px;
+  		background-size: cover;
+ 	 	background-position: left;
+	}
+	.image-button:hover {
+   background-image: url('../images/button.png');
+	}
+
+
+/** images **/
+.MIT {
+	display: flex;
+	align-items: center;
+  }
+
+  
+.sandbox-img {
+	width: 164px;
+}
+.corps-img{
+	width: 130px;
+}
+
+/*=================================================
+||				4.Footer
+     ==================================================*/
+	 .footer
+	 {
+		 background: url('../images/background_first.png');
+		 background-repeat: no-repeat;
+		 background-position: center center;
+		 background-size: cover;
+		 background-attachment: fixed;
+		 height: 100vh;
+		 color: rgb(9, 9, 9);
+		 text-transform: uppercase;
+	 
+	 }
+			 /*Home*/
+	 .about-wrapper{
+		 text-align: center;
+		 display: table-cell;
+		 vertical-align: middle;
+		 position: relative;
+	 }
+	 .about-table{
+		 display: table;
+		 height: 70vh;
+		 width: 100%;
+	 }
+	 .about-title{
+		 font-size: 50px;
+		 letter-spacing: 10px;
+		 font-weight: 500;
+		font-family: 'Inter';
+		font-style: bold;
+	 }
