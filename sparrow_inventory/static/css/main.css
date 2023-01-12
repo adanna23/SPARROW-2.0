@@ -1,8 +1,8 @@
 /*=================================================
 ||				1. Imports 
 ==================================================*/
-@import url(http://fonts.googleapis.com/css?family=Roboto:200,400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Inter:200,400,700);
+@import url(http://fonts.googleapis.com/css?family=Inter+Slab);
 
 body
 {
@@ -54,9 +54,9 @@ body
 .header
 {
 	background: 
-	url('../images/background_first.png');
-	/* url('../images/ezgif 7.png') ; */
-	background-repeat: no-repeat;
+	url('../images/background-stars1.png');
+	/* url('../images/ezgif 7.png') ;  */
+	background-repeat: repeat;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -65,16 +65,34 @@ body
 	
 
 }
+
+.backg {
+background:url('../images/ezgif 7.png');
+background-repeat: repeat;
+z-index: 1;
+}
 			/*navbar*/
-.navbar-default .navbar-brand{
+/* .navbar-default .navbar-brand{
 	border: 1px solid #fff;
-	color: #fff;
+	color: rgb(246, 5, 5);
 	font-size: 30px;
 	padding: 10px 20px;
 	height: auto;
 	font-weight: 500;
 	letter-spacing: 5px;
-}
+} */
+ .navbar-default .sparrow-logo {
+	/* border: 1px solid #fff; */
+	/* color: rgb(246, 5, 5); */
+	justify-content: left;
+		top: 20px;
+		left: 20px;
+		display: flex; 
+		height: 180%;
+		width: 10%;
+		position:absolute;
+} 
+
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
 	color: #fff;
 }
@@ -124,18 +142,21 @@ body
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: #fff;
 }
-	/*Home*/
+	Home
 	.header-wrapper{
 		text-align: left;
-		display: table-cell;
-		vertical-align: middle;
-		position: absolute;
+		/* display: flex;
+		vertical-align: middle; */
+		position: relative;
 	}
 	.header-table{
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		/* grid-template-columns:1fr 1fr;
+		grid-gap: 5px; */
+		/* align-items: right;  */
 		height: 586px;
-		width: 2866px;
+		width: 80%;
 	}
 	.header-title{
 		font-family: 'Inter';
@@ -143,21 +164,43 @@ body
 		font-size: 50px;
 		line-height:  50px;
 		font-weight: 900;
+		top:120px;
+		position: relative;
 	}
+
+	.real-time{
+		display: flex; 
+		flex-direction: row; 
+		/* font-size: 5px; */
+		position: absolute; 
+		width: 18%;
+		height: 12px; 
+		left: 390px;
+		/* padding-left:300px ; */
+		/* justify-content: right; */
+ 
+		/* width: 50px; */
+  		/* height: 5px; */
+	}
+
 	.header-subtitle{
 		font-size: 20px;
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 300;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 		display: flex;
 		align-items: center;
+		position: relative;
+		top:120px;
 
 	}
 
 	.app-icons {
 		display: flex;
 		align-items: center;
+		position: relative;
+		top:160px;
 	  }
 
 	  
@@ -169,26 +212,120 @@ body
 	}
 	
 	/** Astronuts page 1 **/
-	.astronut-1 {
-	align-items: right;
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background: url('../images/astronut-1.png');
-	}
 
 	/** Iphone one **/
-	.iphone-1 {
-		position: absolute;
-		top:0;
+	.phone-imge {
+		/* position: absolute; */
+		justify-content: right;
+		top: 5;
 		right: 0;
-		display: block;
-		height: 125px;
-		width: 125px;
-		background: url('../images/iphone-1.png');
+		display: flex; 
+		height: 50%;
+		width: 180%;
+		position:relative;
+	}
+				
+    .phone-img-one {
+		height:180%;
+		width: 20%;
+		/* padding-right: 80px;
+		padding-bottom: 20px;  */
+		 bottom: 280px; 
+		 right: 460px;
+		 position:relative;
+	} 
 
+	.astro-img-one{
+		height: 43%;
+		width: 5%;	
+		/* justify-content: center; */
+		right: 430px;  
+		bottom: 180px; 
+		/* top:500px; */
+		position:relative;  
+	}
+
+	.new-img-one{
+	height: 15%;
+	width: 5%;	
+	/* left: 400px;
+	bottom: 300px; */
+	position: relative;
+	right: 408px;
+	bottom: 230px;
+	/* padding-left: 160px;
+	padding-bottom: 60px;  */
+	/* padding-right: 300px; */
 
 	}
+	 
+	 
+/** astronut bottom **/
+	.astro-pages{
+		/* justify-content: right; */
+		/* top: 5;
+		right: 0; */
+		display: flex; 
+		height: 100%;
+		width: 100%;
+		/* position:absolute; */
+		bottom:0;
+		/* justify-content: left; */
+		left: 0;
+		/* position: relative; */
+
+	}
+	.astro-img-top1{
+		/* display: inline-flex;  */
+		height: 80%;
+		width: 22%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 580px;  
+		right:350px;
+		position:relative; 
+
+	}
+	.astro-left-bot{
+		position:relative;
+		height: 80%;
+		width: 25%;	
+		bottom:100px;
+		right:105px;
+	}
+
+	.astro-mid{
+		/* display: inline-flex;  */
+		height: 95%;
+		width: 32%;	
+		/* justify-content: center; */
+		left: 230px;  
+		bottom: 230px;
+		position:relative; 
+	}
+
+	
+	.astro-bottom-right{
+		/* display: inline-flex;  */
+		height: 15%;
+		width: 15%;	
+		/* justify-content: center; */
+		right: 40px; 
+		bottom:100px;
+		position:absolute; 
+	}
+
+	.start-arrow{
+		/* display: inline-flex;  */
+		height: 18%;
+		width: 8%;	
+		/* justify-content: center; */
+		right: 450px; 
+		bottom:190px;
+		position:absolute; 
+
+	}
+
 
 	/*=================================================
 ||				2. About
@@ -202,7 +339,8 @@ body
 		 background-attachment: fixed;
 		 height: 100vh;
 		 color: rgb(9, 9, 9);
-		 text-transform: uppercase;
+		 align-items: center;
+		 /* text-transform: uppercase; */
 	 
 	 }
 			 /*Home*/
@@ -215,16 +353,280 @@ body
 	 .about-table{
 		 display: table;
 		 height: 70vh;
-		 width: 100%;
+		 width: 90%;
 	 }
 	 .about-title{
-		 font-size: 50px;
-		 letter-spacing: 10px;
-		 font-weight: 500;
+		font-size: 45px;
+		letter-spacing: 1px;
+		font-weight: 900;
+		top:75px;
+		left: 80px;
 		font-family: 'Inter';
 		font-style: bold;
+		position:inherit;
 	 }
 
+	 /**map logo pizza **/
+	 .map-logos{
+		/* justify-content: right; */
+		/* top: 5;
+		right: 0; */
+		display: flex; 
+		height: 100%;
+		width: 20%;
+		position:absolute; 
+		/* bottom:0; */
+		/* justify-content: left; */
+		/* left: 0; */
+		/* z-index: 1; */
+	 }
+
+
+	.pizza-img{
+		/* display: inline-flex;  */
+		height: 14%;
+		width: 69%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 820px;  
+		left:840px;
+		position:absolute; 
+	}
+
+	.pizza-arrow{
+		/* display: inline-flex;  */
+		height: 5%;
+		width: 15%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 880px;  
+		left:830px;
+		position:absolute; 
+	}
+
+	.pizza-review{
+		/* display: inline-flex;  */
+		height: 10%;
+		width: 70%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 870px;  
+		left:685px;
+		position:absolute; 
+	}
+
+	/** sword review **/
+	.sword-img-1 {
+		/* display: inline-flex;  */
+		height: 18%;
+		width: 45%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 650px;  
+		right:280px;
+		position:absolute;  
+	}
+	
+	.sword-1-arrow{
+		/* display: inline-flex;  */
+		height: 3%;
+		width: 20%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 715px;  
+		right: 259px;
+		position:absolute; 
+	}
+
+	.sword-1-review{
+		/* display: inline-flex;  */
+		height: 11%;
+		width: 80%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 700px;  
+		right: 90px;
+		position:absolute; 
+	}
+
+/** bus review **/
+.bus-img {
+	/* display: inline-flex;  */
+	height: 12%;
+	width: 65%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 810px;  
+	left:300px;
+	position:absolute;  
+}
+
+.bus-arrow{
+	/* display: inline-flex;  */
+	height: 8%;
+	width: 20%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 880px;  
+	left: 310px;
+	position:absolute; 
+}
+
+.bus-review{
+	/* display: inline-flex;  */
+	height: 10%;
+	width: 70%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 880px;  
+	left: 160px;
+	position:absolute; 
+}
+
+/** Patagonia review **/
+.patagonia-img {
+	/* display: inline-flex;  */
+	height: 17%;
+	width: 55%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 280px;  
+	right:260px;
+	position:absolute;  
+}
+
+.patagonia-arrow{
+	/* display: inline-flex;  */
+	height: 3%;
+	width: 25%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 400px;  
+	right:250px;
+	position:absolute; 
+}
+
+.patagonia-review{
+	/* display: inline-flex;  */
+	height: 10%;
+	width: 70%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 375px;  
+	right: 105px;
+	position:absolute; 
+}
+
+.patagonia-sale{
+	/* display: inline-flex;  */
+	height: 5%;
+	width: 10%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 280px;  
+	left: 155px;
+	position:absolute; 
+}
+
+	/** sword-2-review **/
+	.sword-img-2 {
+		height: 16%;
+		width: 45%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 800px;  
+		left:1130px;
+		position:absolute;
+	}
+	
+	.sword-2-arrow{
+		/* display: inline-flex;  */
+		height: 6%;
+		width: 15%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 770px;  
+		left:1125px;
+		position:absolute; 
+	}
+
+	.sword-2-review{
+		/* display: inline-flex;  */
+		height: 10%;
+		width: 75%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 700px;  
+		left:1020px;
+		position:absolute; 
+	}
+
+		/** pickup-review **/
+		.pickup-img{
+			/* display: inline-flex;  */
+		height: 9%;
+		width: 90%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 180px;  
+		left:475px; 
+		position:absolute;  
+}	
+		.pickup-review{
+			/* display: inline-flex;  */
+			height: 10%;
+			width: 69%;	
+			/* justify-content: center; */
+			/* right: 930px;    */
+			bottom: 230px;  
+			left:360px;
+			position:absolute; 
+		}
+
+		/** Fair-review **/
+	.fair-img {
+		/* display: inline-flex;  */
+		height: 12%;
+		width: 50%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 180px;  
+		left:1060px;
+		position:absolute;  
+	}
+
+	.fair-review{
+		/* display: inline-flex;  */
+		height: 9%;
+		width: 73%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 215px;  
+		left:905px;
+		position:absolute; 
+	}
+
+	/** map-review **/
+	.map-review-img{
+		/* display: inline-flex;  */
+	height: 20%;
+	width: 100%;	
+	/* justify-content: center; */
+	/* right: 930px;    */
+	bottom: 410px;  
+	left:1005px; 
+	position:absolute;  
+}	
+
+	.map-review{
+		height: 11%;
+		width: 75%;	
+		/* justify-content: center; */
+		/* right: 930px;    */
+		bottom: 440px;  
+		left:845px;
+		position:absolute; 
+	}
 	 /*=================================================
 ||				3. Join Us
      ==================================================*/
@@ -237,7 +639,6 @@ body
 		 background-attachment: fixed;
 		 height: 100vh;
 		 color: rgb(0, 0, 0);
-		 text-transform: lowercase;
 	 
 	 }
 			 /*Home*/
@@ -249,49 +650,64 @@ body
 	 }
 	 .joinus-table{
 		 display: table;
-		 height: 70vh;
+		 height: 100%;
 		 width: 100%;
 	 }
 	 .joinus-title{
-		 font-size: 50px;
-		 letter-spacing: 10px;
-		 font-weight: 500;
+		top: 80px;  
+		font-size: 40px;
+		height: 10%;
+		width: 80%;
+		 /* letter-spacing: 1px; */
+		font-weight: 1000;
 		font-family: 'Inter';
 		font-style: bold;
+		position: relative;
 	 }
 
 	 .joinus-subtitle{
-		font-size: 20px;
+		position: inherit;
+		font-size: 18px;
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 300;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 		display: flex;
 		align-items: center;
+		color: rgb(45, 7, 51);
+		top: 130px;
+
+		
 
 	}
 
 	.joinus-subtitle-2{
-		font-size: 20px;
+		position: relative;
+		top:150px;
+		font-size: 18px;
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 300;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 		display: flex;
 		align-items: center;
+		color: rgb(45, 7, 51);
 
 	}
 
 	/*** button **/
 	/* Container needed to position the button. Adjust the width as needed */
+
 	.img-button {
-		display: block;
+		display: flex;
 		background-image: url('../images/button.png');
-  		width: 150px;
-  		height: 30px;
-  		padding: 5px;
-  		background-size: cover;
+  		width: 98px;
+  		height: 28px;
+  		/* padding: 5px; */
+  		 background-size: cover; 
  	 	background-position: left;
+		top:165px;
+		position: relative;
 	}
 	.image-button:hover {
    background-image: url('../images/button.png');
@@ -299,19 +715,90 @@ body
 
 
 /** images **/
-.MIT {
+	.MIT {
 	display: flex;
-	align-items: center;
-  }
+	align-items: center; 
+	height: 50%;
+	top: 170px;
+	position: relative;
+	
+  	}
 
   
-.sandbox-img {
-	width: 164px;
-}
-.corps-img{
-	width: 130px;
-}
+	.sandbox-img {
+		height: 20%;
+		width: 20%;
+		margin-right: 20px;
+	}
+	
+	
+	.corps-img{
+		height: 20%;
+		width: 20%; 
+	} 
 
+	/** astronut images page 3 **/
+	.astro-pg-3{
+		justify-content: right;
+		bottom: 0;
+		right: 0;
+		display: flex; 
+		height: 100%;
+		width: 190%;
+		bottom: 100px;
+		position:relative; 
+	} 
+
+	.astronut-game{
+		height: 50%;
+		width: 45%; 
+		bottom: 20px;
+		left:200px;
+		top:90px;
+		/* bottom:5px; */
+		/* padding-right: 180px; */
+		/* padding-top: 100px; */
+		position: inherit; 
+	 } 
+
+	 .astronut-cloud{
+		height: 120%;
+		width: 30%;
+		/* padding-bottom: 100px;   */
+		bottom:250px;
+		left:320px; 
+		position: relative;
+		/* padding-left: 50%; */
+		/* top: 0px;  */
+	 }
+
+	.astronut-moon{
+		height: 80%;
+		width: 180%;
+		display: flex; 
+		position:relative; 
+		text-align: right;
+		/*padding-bottom: 100px; */
+		/* top:15px;
+		right:0px;
+		position: absolute;  
+		/* padding-left: 50%;
+		top: 0px; */
+	} 
+
+	.astro-moon{
+		height: 180%;
+		width: 100%;
+		top:200px;
+		left:305px; 
+		position:relative; 
+		/*padding-bottom: 100px; */
+		/* top:15px;
+		right:0px;
+		position: absolute;  
+		/* padding-left: 50%;
+		top: 0px; */
+	} 
 /*=================================================
 ||				4.Footer
      ==================================================*/
@@ -319,30 +806,60 @@ body
 	 {
 		 background: url('../images/background_first.png');
 		 background-repeat: no-repeat;
-		 background-position: center center;
+		 background-position: center;
 		 background-size: cover;
 		 background-attachment: fixed;
 		 height: 100vh;
-		 color: rgb(9, 9, 9);
-		 text-transform: uppercase;
+		 color: rgb(255, 255, 255);
+		 
 	 
 	 }
 			 /*Home*/
-	 .about-wrapper{
+	 .footer-wrapper{
 		 text-align: center;
 		 display: table-cell;
 		 vertical-align: middle;
 		 position: relative;
 	 }
-	 .about-table{
+	 .footer-table{
 		 display: table;
-		 height: 70vh;
+		 height: 50%;
 		 width: 100%;
 	 }
-	 .about-title{
-		 font-size: 50px;
-		 letter-spacing: 10px;
-		 font-weight: 500;
+	 .footer-title{
+		font-size: 50px;
+		width: 200%;
+		height: 50%;
+		letter-spacing: 2px;
+		font-weight: 1000;
 		font-family: 'Inter';
 		font-style: bold;
+	 }
+	 .phone-footer{
+		/* justify-content: right; */
+		/* bottom: 0; */
+		left: 100px;
+		display: flex; 
+		height: 80%;
+		width: 80%;
+		bottom: 120px;
+		position:relative;  
+	 }
+
+	
+
+	
+	 
+
+	 .footer-privacy{
+		font-size: 12px;
+		width: 300%;
+		height: 5%;
+		letter-spacing: 5px;
+		font-family: 'Inter';
+		top: 100px;
+		left: 150px;
+		/* text-align: center; */
+		position: relative;
+		font-weight: 500;
 	 }
